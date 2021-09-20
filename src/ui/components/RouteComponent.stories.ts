@@ -8,7 +8,7 @@ export default {
 const Template = (args: unknown, { argTypes }: any) => ({
   props: Object.keys(argTypes),
   components: { RouteComponent },
-  template: '<router-component v-bind="$props" />',
+  template: '<route-component v-bind="$props" />',
 });
 
 export const Main = Template.bind({});
