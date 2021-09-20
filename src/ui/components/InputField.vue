@@ -1,0 +1,9 @@
+<template>
+  <v-text-field
+    placeholder="Введите"
+    rounded
+    dense
+    filled
+    prepend-inner-icon="mdi-airplane-takeoff"
+  />
+</template>
