@@ -1,20 +1,21 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import ExampleView from '@/ui/views/ExampleView.vue';
+import RouteComponent from '@/ui/components/RouteComponent.vue';
 
 Vue.use(VueRouter);
 
-const examplePage: RouteConfig = {
-  name: 'example',
+const routeSearch: RouteConfig = {
+  name: 'route-search',
   path: '/',
-  component: ExampleView,
+  component: RouteComponent,
 };
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-    examplePage,
+    routeSearch,
+
   ],
 });
 
